@@ -1,0 +1,156 @@
+/* homepage.module.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: hsl(0, 0%, 0%); /* Warna latar belakang navbar */
+  padding: 10px 20px; /* Padding atas dan bawah 10px, kiri dan kanan 20px */
+  display: flex; /* Menjadikan navbar flex container */
+  justify-content: space-between; /* Menyusun item di navbar secara horizontal dan terpisah */
+  align-items: center; /* Memusatkan vertikal konten navbar */
+}
+
+.navbarLogo {
+  display: flex; /* Menjadikan logo dan teks di navbar flex container */
+  align-items: center; /* Memusatkan vertikal logo dan teks */
+}
+
+.logo {
+  width: 28px; /* Lebar logo */
+  height: auto; /* Tinggi logo menyesuaikan proporsi */
+  margin-right: 10px; /* Jarak kanan antara logo dan teks */
+  margin-left: 20px; /* Jarak kiri antara logo dengan tepi */
+}
+
+.logoText {
+  font-size: 1.2rem; /* Ukuran teks logo */
+  font-weight: bold; /* Tebal teks logo */
+  color: #fff; /* Warna teks logo */
+  padding-top: 6%; /* Ruang atas teks logo */
+  margin-left: 10px; /* Jarak kiri teks logo dari logo */
+}
+
+/* Menu Navbar */
+.navbar ul {
+  list-style-type: none; /* Menghilangkan bullet point pada daftar menu */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Menjadikan daftar menu flex container */
+}
+
+.navbar ul li {
+  margin-left: 10px; /* Jarak antara item menu */
+}
+
+.navbar ul li a {
+  text-decoration: none; /* Menghilangkan dekorasi hyperlink */
+  color: #fff; /* Warna teks menu */
+  font-weight: bold; /* Tebal teks menu */
+  padding: 8px 12px; /* Padding dalam item menu */
+  border-radius: 4px; /* Sudut melengkung pada tombol menu */
+  transition: background-color 0.3s ease; /* Transisi warna latar belakang saat hover */
+}
+
+.navbar ul li a:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+/* Container */
+.container {
+  display: flex; /* Menjadikan container flex container */
+  justify-content: center; /* Memusatkan horizontal konten di container */
+  align-items: center; /* Memusatkan vertikal konten di container */
+  height: 100vh; /* Tinggi container mengisi seluruh viewport */
+  background-image: linear-gradient(to bottom, #1e1f23, #1E1F23); /* Gradien latar belakang */
+}
+
+/* Banner 1 Content */
+
+
+h1 {
+  font-size: 36px; /* Ukuran font untuk judul h1 */
+  margin-bottom: 10px; /* Jarak bawah judul dengan paragraf di bawahnya */
+}
+
+p {
+  font-size: 18px; /* Ukuran font untuk paragraf */
+  margin-bottom: 20px; /* Jarak bawah paragraf dengan tombol di bawahnya */
+}
+
+.loginButton {
+  padding: 10px 20px; /* Padding pada tombol login */
+  font-size: 18px; /* Ukuran font pada tombol login */
+  background-color: #007bff; /* Warna latar belakang tombol login */
+  color: #fff; /* Warna teks pada tombol login */
+  border: none; /* Menghilangkan border pada tombol */
+  border-radius: 4px; /* Sudut melengkung pada tombol */
+  cursor: pointer; /* Kursor pointer saat dihover pada tombol */
+}
+
+.loginButton:hover {
+  background-color: #0069d9; /* Warna latar belakang tombol saat dihover */
+}
+
+
+   
+
+/* Responsivitas untuk tombol login pada layar kecil */
+@media (max-width: 600px) {
+  .loginButton {
+    width: 100%; /* Tombol login menjadi full-width pada layar kecil */
+  }
+}
+
+/* Container 2 */
+.container2 {
+  display: flex; /* Menjadikan container flex container */
+  justify-content: center; /* Memusatkan horizontal konten di container */
+  align-items: center; /* Memusatkan vertikal konten di container */
+  height: 100vh; /* Tinggi container mengisi seluruh viewport */
+  background-image: linear-gradient(to bottom, #1e1f23, #1e1f23); /* Gradien latar belakang */
+}
+
+/* Flexbox untuk susunan banner 1 dan banner 2 */
+
+
+/* Banner 2 Content */
+.bannerContent2 {
+  text-align: center; /* Posisi teks dalam banner 2 di tengah */
+  padding: 20px; /* Padding dalam banner 2 */
+  border-radius: 10px; /* Sudut melengkung untuk tampilan lebih halus */
+  box-shadow: 20px 18px 20px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek tiga dimensi */
+  margin-left: 2%; /* Jarak kiri banner 2 dari tepi container */
+}
+
+
+/* homepage.module.css */
+
+/* Container styles and reset rules (previously defined) */
+
+/* Banner 1 and Banner 2 Content */
+.bannerContent, .bannerContent2 {
+  text-align: center; /* Center-align text within the banner content */
+  padding: 0; /* Remove padding to align images precisely */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  box-shadow: 20px 18px 20px 20px rgba(0, 0, 0, 0.1); /* Box shadow for a 3D effect */
+  max-width: 100%;
+}
+

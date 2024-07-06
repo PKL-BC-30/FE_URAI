@@ -1,0 +1,62 @@
+/* src/components/pages/insideNav.module.css */
+
+/* Container utama sidebar */
+.sidebar {
+  width: 105px; /* Lebar sidebar */
+  height: 100vh; /* Tinggi sidebar mencakup seluruh tampilan vertikal */
+  background-color: #333; /* Warna latar belakang sidebar */
+  color: white; /* Warna teks sidebar */
+  position: fixed; /* Sidebar tetap di posisi ini saat di-scroll */
+  top: 0%; /* Mulai dari atas */
+  left: 0; /* Mulai dari sisi kiri */
+  padding-top: 20px; /* Jarak dari atas ke konten sidebar */
+}
+
+/* Daftar unordered list dalam sidebar */
+.sidebar ul {
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghilangkan padding default */
+  margin: 0; /* Menghilangkan margin default */
+  margin-bottom: 20px;
+}
+
+/* Setiap item dalam daftar sidebar */
+.sidebar ul li {
+  padding: 10px 12px; /* Jarak di sekitar item untuk ruang lebih */
+  text-align: center; /* Teks di tengah */
+}
+
+/* Link dalam daftar sidebar */
+.sidebar ul li a {
+  color: white; /* Warna teks link */
+  text-decoration: none; /* Menghilangkan underline pada link */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center-align items */
+  justify-content: center; /* Center-align items */
+  gap: 5px; /* Space between icon and text */
+}
+
+/* Hover efek untuk link */
+.sidebar ul li a:hover {
+  background-color: #575757; /* Warna latar belakang saat link di-hover */
+}
+
+/* Style khusus untuk ikon user */
+.userIcon {
+  font-size: 24px; /* Adjust icon size */
+  color: #ffffff; /* Customize the icon color */
+  margin-left: 30px;
+  margin-bottom: 3px; /* Space between the icon and text */
+}
+
+/* Tambahan style untuk ukuran ikon */
+.iconText {
+  font-size: 1rem; /* Adjust text size if needed */
+}
+
+/* Link logout untuk ditempatkan dekat bagian bawah sidebar */
+.logoutLink {
+  margin-top: 620px; /* Position the logout link near the bottom */
+  display: block;
+}

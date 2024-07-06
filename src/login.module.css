@@ -1,0 +1,177 @@
+/* login.module.css */
+
+/* Main page container */
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1e1f23;
+}
+
+/* Main container for welcome and login sections */
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 50px;
+}
+
+/* Welcome section */
+.welcomeSection {
+  flex: 1;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #1e1f23;
+  border-radius: 20px;
+  margin-right: 50px;
+  
+  
+}
+
+.welcomeSection h1 {
+  font-size: 63px;
+    margin-bottom: 9px;
+    margin-left: 163px;
+}
+
+.welcomeSection p {
+  font-size: 1.2rem;
+  font-size: 1.2rem;
+  margin-bottom: -1px;
+  margin-left: 112px;
+  text-align: center;
+}
+
+.brandName {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Login container */
+.loginContainer {
+  flex: 1;
+  padding: 50px;
+  border: 1px solid #1e1f23;
+  border-radius: 20px;
+  background-color: #2c2c2c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+}
+
+/* Remaining styles (form, buttons, etc.) */
+.formGroup {
+  margin-bottom: 9px;
+}
+
+.formGroupCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.formGroupCheckbox label {
+  margin-left: 5px;
+  color: white;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  background-color: #1e1f23;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ffffff00;
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 10px;
+}
+/* Social login section */
+.socialLogin {
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.socialLogin p {
+  margin: 10px 0;
+}
+
+.socialButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.facebookButton {
+  background-color: #1877f2; /* Facebook blue */
+  color: white;
+}
+
+.googleButton {
+  background-color: #db4437; /* Google red */
+  color: white;
+}
+
+.appleButton {
+  background-color: black;
+  color: white;
+}
+
+.socialButton:hover {
+  opacity: 0.9;
+}
+._welcomeSection_g3ka9_43 h1 {
+    font-size: 63px;
+    margin-bottom: 9px;
+    margin-left: 163px;
+}
+
+.registerText{
+
+  margin-top: 25px;
+}
