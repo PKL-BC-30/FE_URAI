@@ -5,9 +5,10 @@
   min-height: 100vh;
   background-color: #0b0e1c;
   animation: fadeIn 1s ease-in-out;
-  background-image: linear-gradient(to left, #1e1f23, #0b0e1c);
+  background-image: url('/src/pages/img/backgorundland.jpg'); /* replace with your image URL */
+  background-size: cover; /* optional, but recommended to scale the image */
+  background-position: center; /* optional, but recommended to center the image */
 }
-
 /* Main container for welcome and login sections */
 .mainContainer {
   display: flex;
@@ -34,8 +35,10 @@
 
 .welcomeSection h1 {
   font-size: 63px;
-  margin-bottom: 9px;
-  margin-left: 163px;
+  margin-bottom: -5px;
+  margin-left: 180px;
+  color: #ececec;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .welcomeSection p {
@@ -43,6 +46,7 @@
   margin-bottom: -1px;
   margin-left: 112px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .brandName {
@@ -55,9 +59,10 @@
   flex: 1;
   padding: 50px;
   border-radius: 20px;
-  background-color: #112533;
+  
   text-align: center;
   animation: slideInRight 1s ease-out;
+  background-image: radial-gradient(black, #000000ad);
 }
 
 /* Form styles */
@@ -96,7 +101,7 @@ input[type="password"] {
   border: none;
   border-radius: 4px;
   margin-top: 5px;
-  background-color: #1e1f23;
+  background-color: #ffffff54;
   color: white;
 }
 
@@ -119,6 +124,16 @@ button:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+/* Add a line below the login button */
+button + .line {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
 /* Error message style */
 .errorMessage {
   color: red;
@@ -127,10 +142,10 @@ button:hover {
 
 /* Social login section */
 .socialLogin {
-  margin-top: 10px;
+  margin-top: 133px;
   text-align: center;
   margin-left: 180px;
-  margin-right: 180px;
+  margin-right: 188px;
 }
 
 .socialLogin p {

@@ -4,7 +4,7 @@
 .sidebar {
   width: 105px;
   height: 100vh;
-  background-color: #112533;
+  background-image: linear-gradient(355deg, black, #000000bd);
   color: white;
   position: fixed;
   top: 0;

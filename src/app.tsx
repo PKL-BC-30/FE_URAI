@@ -14,6 +14,7 @@ const App: Component = () => {
       <Route path="/register" component={Register} />
       <Route path="/homemain" component={HomeMain} />
       <Route path="/total" component={Total} />
+      
     </Routes>
   );
 };

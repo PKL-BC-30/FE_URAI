@@ -13,7 +13,7 @@ body, html {
   padding: 20px;
   color: #1E1F23;
   padding-left: 165px;
-  background-image: url('./pages/img/trash.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+  background-image: url('./pages/img/insidebacks.jpg'); /* Ganti dengan path gambar latar belakang Anda */
   background-size: cover; /* Menyesuaikan gambar agar mencakup seluruh area container */
   background-position: center; /* Posisikan gambar ke tengah container */
   padding-bottom: 202px;
@@ -46,12 +46,12 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid #000e1a;
+
   border-radius: 10px;
   padding: 20px;
   width: 100%;
   text-align: center;
-  background-color: #000000;
+  background-image: radial-gradient(#53535300, black);
 }
 
 .box img {

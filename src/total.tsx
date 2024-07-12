@@ -28,7 +28,7 @@ const TotalPage: Component = () => {
     backgroundImage: `url('./pages/img/backinsides.jpg')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    minHeight: '100vh'
+    minHeight: '100vh'                                
   };
 
   return (
@@ -44,7 +44,7 @@ const TotalPage: Component = () => {
             defaultColDef={defaultColDef}
           />
         </div>
-      </div>
+      </div>  
     </div>
   );
 };

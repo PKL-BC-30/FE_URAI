@@ -1,52 +1,54 @@
 /* src/components/navbar.module.css */
 
+/* Navbar container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #112533;
-    color: white;
-    position: fixed; /* Make the navbar fixed at the top */
-    top: 0;
-    z-index: 1000; /* Ensure it stays above other elements */
-  }
-  
-  .navbarLogo {
-    display: flex;
-    align-items: center; /* Align the logo and text vertically centered */
-  }
-  
-  .logo {
-    height: 30px; /* Adjust the height as needed */
-    margin-right: 11px;
-    margin-bottom: 5px;
-  }
-  
-  .logoText {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-  }
-  
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    margin: 0 10px;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-image: radial-gradient(#272727, black);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo and text */
+.navbarLogo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 11px;
+  margin-bottom: 5px;
+}
+
+.logoText {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation menu */
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

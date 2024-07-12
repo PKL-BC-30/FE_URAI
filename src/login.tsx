@@ -74,6 +74,7 @@ const Login: Component = () => {
               />
             </div>
             <button type="submit" class={styles.loginButton}>Login</button>
+            <div class="line"></div>
             {error() && <p class={styles.errorMessage}>{error()}</p>}
           </form>
           <div class={styles.socialLogin}>
