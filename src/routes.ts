@@ -36,6 +36,22 @@ export const routes: RouteDefinition[] = [
     component: lazy(() => import('./total')),  // Pemakaian lazy untuk pemuatan malas
   },
   {
+    path: '/organik',
+    component: lazy(() => import('./hitung/organik')),
+  },
+  {
+    path: '/electric',
+    component: lazy(() => import('./hitung/electric')),
+  },
+  {
+    path: '/ag-grid',
+    component: lazy(() => import('./admin/ag-grid')),
+  },
+  {
+    path: '/homeA',
+    component: lazy(() => import('./homeA')),
+  },
+  {
     path: '**',
     component: lazy(() => import('./errors/404')),
   },

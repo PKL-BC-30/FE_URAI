@@ -1,62 +1,81 @@
 /* src/components/pages/insideNav.module.css */
 
-/* Container utama sidebar */
+/* Main sidebar container */
 .sidebar {
-  width: 105px; /* Lebar sidebar */
-  height: 100vh; /* Tinggi sidebar mencakup seluruh tampilan vertikal */
-  background-color: #333; /* Warna latar belakang sidebar */
-  color: white; /* Warna teks sidebar */
-  position: fixed; /* Sidebar tetap di posisi ini saat di-scroll */
-  top: 0%; /* Mulai dari atas */
-  left: 0; /* Mulai dari sisi kiri */
-  padding-top: 20px; /* Jarak dari atas ke konten sidebar */
+  width: 105px;
+  height: 100vh;
+  background-color: #112533;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transitions for width and background-color */
+  z-index: 1000; /* Ensure sidebar stays above other content */
 }
 
-/* Daftar unordered list dalam sidebar */
+/* List styling for sidebar items */
 .sidebar ul {
-  list-style-type: none; /* Menghilangkan bullet points */
-  padding: 0; /* Menghilangkan padding default */
-  margin: 0; /* Menghilangkan margin default */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   margin-bottom: 20px;
 }
 
-/* Setiap item dalam daftar sidebar */
+/* Individual sidebar item */
 .sidebar ul li {
-  padding: 10px 12px; /* Jarak di sekitar item untuk ruang lebih */
-  text-align: center; /* Teks di tengah */
+  padding: 10px 12px;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition for background-color */
 }
 
-/* Link dalam daftar sidebar */
+/* Sidebar item link */
 .sidebar ul li a {
-  color: white; /* Warna teks link */
-  text-decoration: none; /* Menghilangkan underline pada link */
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Arrange items vertically */
-  align-items: center; /* Center-align items */
-  justify-content: center; /* Center-align items */
-  gap: 5px; /* Space between icon and text */
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
-/* Hover efek untuk link */
+/* Hover effect for sidebar items */
+.sidebar ul li:hover {
+  background-color: #575757;
+}
+
+/* Hover effect for sidebar item links */
 .sidebar ul li a:hover {
-  background-color: #575757; /* Warna latar belakang saat link di-hover */
+  color: #ffffff; /* Change text color on hover */
 }
 
-/* Style khusus untuk ikon user */
+/* User icon style */
 .userIcon {
-  font-size: 24px; /* Adjust icon size */
-  color: #ffffff; /* Customize the icon color */
+  font-size: 24px;
+  color: #ffffff;
   margin-left: 30px;
-  margin-bottom: 3px; /* Space between the icon and text */
+  margin-bottom: 3px;
 }
 
-/* Tambahan style untuk ukuran ikon */
+/* Additional style for icon text */
 .iconText {
-  font-size: 1rem; /* Adjust text size if needed */
+  font-size: 1rem;
 }
 
-/* Link logout untuk ditempatkan dekat bagian bawah sidebar */
+/* Logout link positioning */
 .logoutLink {
-  margin-top: 620px; /* Position the logout link near the bottom */
-  display: block;
+  position: absolute;
+  bottom: 35px;
+  left: 47%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Hover effect for logout link */
+.logoutLink:hover {
+  color: #cccccc;
 }

@@ -16,6 +16,7 @@ const Navbar: Component = () => {
         <li><Link href="/">Home</Link></li>
         <li><Link href="/login">Login</Link></li>
         <li><Link href="/register">Register</Link></li>
+        <li><Link href="/ag-grid">Admin</Link></li>
       </ul>
     </div>
   );

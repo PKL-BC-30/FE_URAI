@@ -1,8 +1,9 @@
-import { Component } from "solid-js";
-import { createSignal } from 'solid-js';
+import { Component, createSignal } from 'solid-js';
+import { useNavigate } from "@solidjs/router";
 import styles from './register.module.css';
 import Navbar from "./pages/navbar";
-import { A, useNavigate } from "@solidjs/router";
+import { A } from "@solidjs/router";
+import { users, setUsers } from './admin/store'; // Correctly import the store
 
 const Register: Component = () => {
   const [username, setUsername] = createSignal('');
@@ -10,6 +11,7 @@ const Register: Component = () => {
   const [password, setPassword] = createSignal('');
   const [confirmPassword, setConfirmPassword] = createSignal('');
   const [error, setError] = createSignal('');
+  const [successMessage, setSuccessMessage] = createSignal(''); // State for success message
   const navigate = useNavigate();
 
   const handleSubmit = (e: Event) => {
@@ -18,10 +20,23 @@ const Register: Component = () => {
       setError('Passwords do not match');
       return;
     }
-    // Add your registration logic here
+
+    const newUser = {
+      id: users.length + 1,
+      username: username(),
+      email: email(),
+      password: password(),
+    };
+
+    setUsers([...users, newUser]);
+
     console.log('User registered:', { username: username(), email: email() });
     setError('');
-    navigate('/'); // Navigate to home page after registration
+    setSuccessMessage('Registration successful!'); // Set success message
+    setTimeout(() => {
+      setSuccessMessage(''); // Clear success message after a few seconds
+      navigate('/');
+    }, 3000); // Navigate to home page after 3 seconds
   };
 
   return (
@@ -29,7 +44,7 @@ const Register: Component = () => {
       <Navbar />
       <div class={styles.mainContainer}>
         <div class={styles.welcomeSection}>
-        <h1 style="padding-bottom: -1px;color:greenyellow;padding-left: 14px;">Selamat Datang</h1>
+          <h1>Selamat Datang</h1>
           <p>Selamat datang di Urai, platform untuk mengelola sampah secara efisien.</p>
           <p>Silahkan login untuk masuk atau anda bisa register jika tidak mempunyai akun</p>
         </div>
@@ -84,6 +99,7 @@ const Register: Component = () => {
               />
             </div>
             {error() && <p class={styles.errorMessage}>{error()}</p>}
+            {successMessage() && <p class={styles.successMessage}>{successMessage()}</p>} {/* Show success message */}
             <button type="submit" class={styles.loginButton}>Register</button>
           </form>
           <div class={styles.socialLogin}>

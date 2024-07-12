@@ -1,0 +1,75 @@
+/* src/pages/organik.module.css */
+
+.pageWrapper {
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: url('/src/pages/img/anorganicCount.jpeg'); /* Path sesuaikan dengan struktur proyek Anda */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.container1 {
+  background-color: #d7d2cb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.container1 h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container1 label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.container1 input[type="number"],
+.container1 select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.container1 button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container1 button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 18px;
+}
+label {
+
+color: rgb(255, 255, 255)
+}
+

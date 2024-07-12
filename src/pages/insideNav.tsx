@@ -22,7 +22,7 @@ const Sidebar: Component = () => {
       </ul>
       <ul>
         <li>
-          <a href="/home">
+          <a href="/homeA">
             <span class={styles.iconText}>Home</span>
           </a>
         </li>
