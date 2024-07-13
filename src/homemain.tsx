@@ -9,7 +9,7 @@ const HomeMain: Component = () => {
       <Sidebar />
       <div class={styles.mainContent}>
         <h1 class="_title_920sb_47" style="padding: 46px; font-size: 69px; padding-left: 30vh; color: white;">
-          Jenis Sampah
+          Jenis Sampah  
         </h1>
         <div class={styles.boxes}>
           <div class={styles.boxContainer}>

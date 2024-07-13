@@ -79,13 +79,13 @@ const Login: Component = () => {
           </form>
           <div class={styles.socialLogin}>
           
-            <button class={`${styles.socialButton} ${styles.facebookButton}`}>
+            <button class={`${styles.facebookButton} ${styles.facebookButton}`}>
               <i class="fab fa-facebook-f"></i> Log In with Facebook
             </button>
-            <button class={`${styles.socialButton} ${styles.googleButton}`}>
+            <button class={`${styles.googleButton} ${styles.googleButton}`}>
               <i class="fab fa-google"></i> Log In with Google
             </button>
-            <button class={`${styles.socialButton} ${styles.appleButton}`}>
+            <button class={`${styles.appleButton} ${styles.appleButton}`}>
               <i class="fab fa-apple"></i> Log In with Apple
             </button>
           </div>

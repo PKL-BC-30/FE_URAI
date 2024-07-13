@@ -1,12 +1,14 @@
-// src/pages/organik.tsx
+// src/pages/electric.tsx
 
 import { Component, createSignal } from 'solid-js';
 import styles from './electric.module.css';
 import Sidebar from '../pages/insideNav';
+import { updateEwasteTotal } from '../hitung/storeSampah';
 
-const Organik: Component = () => {
+const Electric: Component = () => {
   const [weight, setWeight] = createSignal<number>(0);
   const [unit, setUnit] = createSignal<string>('gram');
+  const [result, setResult] = createSignal<number>(0);
 
   const convertWeight = () => {
     let convertedWeight;
@@ -15,15 +17,16 @@ const Organik: Component = () => {
         convertedWeight = weight();
         break;
       case 'kilogram':
-        convertedWeight = weight() / 1000;
+        convertedWeight = weight() * 1000;
         break;
       case 'ton':
-        convertedWeight = weight() / 1_000_000;
+        convertedWeight = weight() * 1_000_000;
         break;
       default:
         convertedWeight = weight();
     }
-    return convertedWeight;
+    setResult(convertedWeight);
+    updateEwasteTotal(convertedWeight);
   };
 
   return (
@@ -47,17 +50,17 @@ const Organik: Component = () => {
             <option value="kilogram">Kilogram</option>
             <option value="ton">Ton</option>
           </select>
-        <div class={styles.buttonhitung}>
-         <button onClick={convertWeight}>Hitung</button>
-        </div>
+          <div class={styles.buttonhitung}>
+            <button onClick={convertWeight}>Hitung</button>
+          </div>
         </div>
         <div class={styles.result}>
           <h2>Hasil:</h2>
-          <p>{convertWeight()} {unit()}</p>
+          <p>{result()} Gram</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Organik;
+export default Electric;

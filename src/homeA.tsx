@@ -14,11 +14,11 @@ const HomeA: Component = () => {
       <main class={styles.main}>
         <section class={styles.hero}>
           <div class={styles.heroContent}>
-            <h1 style="margin-left: 36%; text-transform: uppercase; color: black;">Selamat Datang User</h1>
+            <h1 style="margin-left: 36%; text-transform: uppercase; color: black;"></h1>
             <p>
-              Urai adalah sebuah platform inovatif yang didesain untuk membantu pengguna dalam mengelola dan mengurangi sampah, baik sampah organik, anorganik, maupun elektronik. 
+            
             </p>
-            <p class={styles.pban}>Melalui Urai, pengguna dapat mempelajari berbagai metode pengelolaan sampah yang ramah lingkungan, menghitung jumlah sampah yang dihasilkan, dan mendapatkan tips praktis untuk mendaur ulang dan mengompos.</p>
+            <p class={styles.pban}></p>
             <div class={styles.buttons}>
               <button onClick={() => setShowMore(true)}>Learn More</button>
               <button>Hubungi Kami</button>

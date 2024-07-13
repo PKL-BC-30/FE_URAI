@@ -63,7 +63,7 @@ body {
 
 /* Hero Styles */
 .hero {
-  background-image: url('src/pages/img/pannel.jpg');
+  background-image: url('src/pages/img/pannelfix.jpg');
   background-size: cover;
   background-position: center;
   height: 28vh;
@@ -71,13 +71,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  background-image: radial-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
 }
 
 .hero-content h1 {

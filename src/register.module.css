@@ -59,6 +59,8 @@ label {
   background-image: radial-gradient(black, #000000ad);
   box-shadow: 0 2px 4px rgba(79, 77, 77, 0.6); /* Slightly lighter shadow */
   text-align: center;
+  border: 1px;
+  border-color: white;
 }
 
 /* Form group styling */
@@ -99,14 +101,16 @@ label {
 
 /* Button styling */
 .loginButton {
-  padding: 12px 20px;
+  padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff; /* Bright blue */
-  color: #fff;
-  border: none;
+  background-color: #000000;
+  color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-color: white;
+  
 }
 
 /* Error message styling */
@@ -121,7 +125,7 @@ label {
   text-align: center;
   margin-left: 180px;
   margin-right: 180px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .socialLogin p {
@@ -142,16 +146,43 @@ label {
 .facebookButton {
   background-color: #1877f2; /* Facebook blue */
   color: white;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
 }
 
 .googleButton {
   background-color: #db4437; /* Google red */
   color: white;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
 }
 
 .appleButton {
   background-color: black; /* Black for Apple */
   color: white;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
 }
 
 .socialButton:hover {
@@ -178,4 +209,27 @@ label {
 .successMessage p {
   margin: 0;
   font-size: 16px;
+}
+
+.facebookButton:hover {
+  background-color: #155bc9;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+.appleButton:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+.googleButton:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }

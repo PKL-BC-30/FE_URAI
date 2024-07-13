@@ -188,5 +188,5 @@ p {
 }
 
 .bannerContent:hover, .bannerContent2:hover {
-  transform: scale(1.05); /* scale up on hover */
+  transform: scale(1.08); /* scale up on hover */
 }

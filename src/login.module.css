@@ -104,24 +104,44 @@ input[type="password"] {
   background-color: #ffffff54;
   color: white;
 }
+button:hover {
 
+}
 /* Button styles */
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: #000000;
+  color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  border-color: white;
+  
 }
 
-button:hover {
-  background-color: #0056b3;
+.facebookButton:hover {
+  background-color: #155bc9;
   transform: scale(1.05);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+.appleButton:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+.googleButton:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 /* Add a line below the login button */
@@ -142,7 +162,7 @@ button + .line {
 
 /* Social login section */
 .socialLogin {
-  margin-top: 133px;
+  margin-top: 35px;
   text-align: center;
   margin-left: 180px;
   margin-right: 188px;
@@ -152,8 +172,35 @@ button + .line {
   margin: 10px 0;
 }
 
+
 /* Social button styles */
-.socialButton {
+.facebookButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
+  
+}
+
+.appleButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.googleButton {
+
   display: block;
   width: 100%;
   padding: 10px;
